@@ -71,7 +71,7 @@ body{
 #how-section {grid-area: how-section; padding: 20px;}
 #latest-blogs-section {grid-area: latest-blogs-section; padding: 20px;}
 .FAQ-container {grid-area: FAQ-container; padding: 20px;}
-#contact-section {grid-area: contact-section; padding: 20px;}
+#contact-section {grid-area: contact-section; padding: 0px;}
 #follow-section {grid-area: follow-section; padding: 20px;}
 
 
