@@ -10,7 +10,6 @@ body{
   padding: 0px;
   color: #333;
   background:#fff;
-  max-width: 1400px;
 }
 #landing-page-navbar {grid-area: landing-page-navbar;}
 #landing-page-main-grid-container {grid-area: landing-page-main-grid-container;}
@@ -84,10 +83,9 @@ body{
     'why-section what-section how-section'
     'latest-blogs-section latest-blogs-section latest-blogs-section'
     'FAQ-container FAQ-container FAQ-container'
-    'contact-section contact-section follow-section';
+    'contact-section contact-section contact-section';
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  max-width: 1400px;
   margin: auto;
 }
 
@@ -555,18 +553,23 @@ card img {
 .message-us {grid-area: message-us;}
 .our-address {grid-area: our-address;}
 .follow-us {grid-area: follow-us;}
+.more-links {grid-area: more-links;}
 
 .grid-container{
   display: grid;
   grid-template-areas:  
     'message-us our-address'
-    'message-us follow-us';
+    'message-us follow-us'
+    'more-links more-links';
+
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   max-width: 1200px;
   margin: 0 auto;    
   margin-bottom: 30px;                 
 }
+
+
 
 .grid-container > div{
   background: #3bbced;
@@ -599,6 +602,21 @@ card img {
     'header header'
     'icons-container1 icons-container2';
   grid-template-columns: 1fr 1fr;
+}
+
+.more-links-container1 {grid-area: more-links-container1;}
+.more-links-container2 {grid-area: more-links-container2;}
+.more-links-container3 {grid-area: more-links-container3;}
+.more-links-container4 {grid-area: more-links-container4;}
+.more-links-container5 {grid-area: more-links-container5;}
+.more-links-container6 {grid-area: more-links-container6;}
+
+.more-links{
+  display: grid;
+  grid-template-areas:
+    'more-links-container1 more-links-container2 more-links-container3'
+    'more-links-container4 more-links-container5 more-links-container6';
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 
@@ -661,7 +679,25 @@ footer{
     text-align: left;
   }
 
-  h1 { font-size: 50px;} 
+  #landing-page-main-grid-container{
+    display: grid;
+    grid-template-areas: 
+      'hero'
+      'eye-candy-section'
+      'why-section'
+      'what-section'
+      'how-section'
+      'latest-blogs-section'
+      'FAQ-container'
+      'contact-section'
+      'more-links';
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: auto;
+  }
+
+  p {font-size: 14px;}
+  h1 { font-size: 25px;} 
   h2 { font-size: 25px;} 
   h3 { font-size: 18px;} 
   .card {
@@ -684,7 +720,8 @@ footer{
     grid-template-areas:  
       'message-us'
       'our-address'
-      'follow-us';
+      'follow-us'
+      'more-links';
       grid-template-columns: 1fr;
   }
 
@@ -704,6 +741,15 @@ footer{
       'icons-container1' 
       'icons-container2';
     grid-template-columns: 1fr;
+  }
+
+  .more-links{
+    display: grid;
+    grid-template-areas:
+      'more-links-container1 more-links-container2'
+      'more-links-container3 more-links-container4'
+      'more-links-container5 more-links-container6';
+    grid-template-columns: 1fr 1fr;
   }
 
   /* Blog Page */
