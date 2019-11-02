@@ -40,14 +40,14 @@ body{
   float: left;
   display: block;
   color: #363434;
-  text-align: center;
+  text-align: left;
   padding: 4px 0 0 0; /*14px 16px;*/
   text-decoration: none;
   font-size: 14px;
 }
 
 #not-home-icon {
-  padding: 15px 20px 15px 20px;
+  padding: 12px 20px 0px 20px;
 }
 
 .topnav a:hover {
@@ -57,11 +57,30 @@ body{
 
 .topnav a.active {
   background-color: orange;
-  color: white;
+  color: rgb(56, 31, 31);
 }
 
 .topnav .icon {
   display: none;
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+}
+
+.hero-text-block {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  padding-left: 20px;
+}
+
+.tag-line-text-block {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding-left: 20px;
 }
 
 #hero {grid-area: hero;}
@@ -96,8 +115,8 @@ main > section:nth-child(even){
 }
 
 
-h1 { font-family: Lato; font-size: 60px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 40px; padding: 20px; margin-top: 20px; color: #363434;} 
-h2 { font-family: Lato; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 600; line-height: 32px; padding: 10px 0px;} 
+h1 { font-family: Lato; font-size: 50px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 40px; padding: 20px; margin-top: 20px; color: orange;} 
+h2 { font-family: Lato; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 32px; padding: 20px 0px; color: orange} 
 h3 { font-family: Lato; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 22px; padding: 10px 10px 10px 20px; margin-bottom: 1rem;} 
 h4 { font-family: Lato; font-size: 28px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 20px; padding: 30px 10px 0px 5px;} 
 p { font-family: Lato; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; padding: 10px 10px 10px 20px; margin-bottom: 0px;} 
@@ -273,7 +292,7 @@ h4{margin: 0 0 10px;}
 .accordion-panel__content:before{
   transition: all .4s ease;
   content: "";
-  border: 0px #0087cd solid;
+  border: 8px #0087cd solid;
   position: absolute;
   top: 0;
   left: 0;
@@ -282,7 +301,7 @@ h4{margin: 0 0 10px;}
 }
 .accordion-panel__content.active:before{
   transition: all .4s;
-  border-left: 8px #0087cd;
+  border-left: 8px red; /* #0087cd;*/
 }
 .accordion-panel__content.active {
   transition: all .4s;
@@ -360,6 +379,9 @@ img {
     width: 100%;
 }
 
+a img {
+  padding-left: 10px;
+}
 
 
 /* Unicode character for "plus" sign (+) 
@@ -703,9 +725,24 @@ footer{
   }
 
   p {font-size: 14px;}
-  h1 { font-size: 25px;} 
-  h2 { font-size: 25px;} 
+  h1 { font-size: 25px; padding: 0;} 
+  h2 { font-size: 16px; font-weight: 400; line-height: 20px;} 
   h3 { font-size: 18px;} 
+
+  .hero-text-block {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    padding: 2px;
+  }
+
+  .tag-line-text-block {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    padding: 2px;
+  }
+  
   .card {
     display: block;
   }
