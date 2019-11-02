@@ -8,7 +8,7 @@ body{
   height: 100%;
   position: relative;
   padding: 0px;
-  color: #333;
+  color:#363434;
   background:#fff;
 }
 #landing-page-navbar {grid-area: landing-page-navbar;}
@@ -28,18 +28,18 @@ body{
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color:orange;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: orange;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #363434;
   text-align: center;
   padding: 4px 0 0 0; /*14px 16px;*/
   text-decoration: none;
@@ -56,7 +56,7 @@ body{
 }
 
 .topnav a.active {
-  background-color: #343a40;
+  background-color: orange;
   color: white;
 }
 
@@ -69,7 +69,7 @@ body{
 #why-section {grid-area: why-section; padding: 20px;}
 #what-section {grid-area: what-section; padding: 20px;}
 #how-section {grid-area: how-section; padding: 20px;}
-#latest-blogs-section {grid-area: latest-blogs-section; padding: 20px;}
+#demo-filtered-viewer {grid-area: demo-filtered-viewer; padding: 20px;}
 .FAQ-container {grid-area: FAQ-container; padding: 20px;}
 #contact-section {grid-area: contact-section; padding: 0px;}
 #follow-section {grid-area: follow-section; padding: 20px;}
@@ -81,7 +81,7 @@ body{
     'hero hero hero'
     'eye-candy-section eye-candy-section eye-candy-section'
     'why-section what-section how-section'
-    'latest-blogs-section latest-blogs-section latest-blogs-section'
+    'demo-filtered-viewer demo-filtered-viewer demo-filtered-viewer'
     'FAQ-container FAQ-container FAQ-container'
     'contact-section contact-section contact-section';
   grid-template-columns: repeat(3, 1fr);
@@ -96,7 +96,7 @@ main > section:nth-child(even){
 }
 
 
-h1 { font-family: Lato; font-size: 60px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 40px; padding: 0px; margin-top: 20px;} 
+h1 { font-family: Lato; font-size: 60px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 40px; padding: 20px; margin-top: 20px; color: #363434;} 
 h2 { font-family: Lato; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 600; line-height: 32px; padding: 10px 0px;} 
 h3 { font-family: Lato; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 22px; padding: 10px 10px 10px 20px; margin-bottom: 1rem;} 
 h4 { font-family: Lato; font-size: 28px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 20px; padding: 30px 10px 0px 5px;} 
@@ -113,7 +113,13 @@ blockquote { font-family: Lato; font-size: 21px; font-style: normal; font-varian
 pre { font-family: Lato; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 15px; }
 input { font-family: Lato; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 15px; padding: 5px; margin-bottom: 5px; width: 100%;} 
 textarea { font-family: Lato; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 15px; padding: 5px; margin-bottom: 5px; } 
-footer > p { font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 25px; padding: 5px; } 
+footer > p { font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 25px; padding: 5px; margin: 20px 0;} 
+li {font-family: Lato; font-size: 15px;}
+
+li span {
+  position: relative;
+  left: -8px;
+}
 
 
 table { width:100%;}
@@ -211,7 +217,7 @@ h4{margin: 0 0 10px;}
 .accordion{
 	border-radius: 3px;
 	overflow: hidden;
-	border: 1px solid #b50d10;
+	border: 1px solid #0087cd;
 }
 
 .accordion-panel__heading{
@@ -219,7 +225,7 @@ h4{margin: 0 0 10px;}
 	padding: 20px;
 	display: block;
 	text-decoration: none;
-	color: #b50d10;
+	color: 0087cd;
 	background: #f5f5f5;
 	font-size: 18px;
 	font-weight: 600;
@@ -227,12 +233,12 @@ h4{margin: 0 0 10px;}
 	cursor:pointer;
 }
 .accordion-panel__heading:not(:last-child){
-  border-bottom: 1px solid #b50d10;
+  border-bottom: 1px solid #0087cd;
 }
 .accordion-panel__heading:before{
 	transition: all .4s ease;
 	content: "";
-	border: 0px #6495ED solid;
+	border: 0px #0087cd solid;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -241,7 +247,7 @@ h4{margin: 0 0 10px;}
 }
 .accordion-panel__heading.active:before{
 	transition: all .4s;
-	border-left: 8px #b50d10 solid;
+	border-left: 8px #0087cd;
 }
 .accordion-panel__heading:HOVER{
 	color: #333;
@@ -267,7 +273,7 @@ h4{margin: 0 0 10px;}
 .accordion-panel__content:before{
   transition: all .4s ease;
   content: "";
-  border: 0px #6495ED solid;
+  border: 0px #0087cd solid;
   position: absolute;
   top: 0;
   left: 0;
@@ -276,7 +282,7 @@ h4{margin: 0 0 10px;}
 }
 .accordion-panel__content.active:before{
   transition: all .4s;
-  border-left: 8px #b50d10 solid;
+  border-left: 8px #0087cd;
 }
 .accordion-panel__content.active {
   transition: all .4s;
@@ -292,7 +298,7 @@ h4{margin: 0 0 10px;}
 }
 
 a {
-  color: #333;
+  color:#0087cd;
   text-decoration: none;  
 }
 
@@ -333,7 +339,7 @@ a {
 }
 
 .main-header h1 span {
-  color: #b50d10;
+  color: #0087cd;
 }
 
 .main-header p1 {
@@ -347,7 +353,7 @@ a {
 }
 
 p span {
-  color: #b50d10;
+  color: #0087cd;
 }
 
 img {
@@ -446,7 +452,7 @@ card img {
 
 .btn {
   display: inline-block;
-  background: #b50d10;
+  background: #0087cd;
   color: #fff;
   padding: 0.4rem 1rem;
   cursor: pointer;
@@ -553,7 +559,7 @@ card img {
 .message-us {grid-area: message-us;}
 .our-address {grid-area: our-address;}
 .follow-us {grid-area: follow-us;}
-.more-links {grid-area: more-links;}
+.more-links {grid-area: more-links; margin-bottom: 20px;}
 
 .grid-container{
   display: grid;
@@ -572,7 +578,7 @@ card img {
 
 
 .grid-container > div{
-  background: #3bbced;
+  background: #0087cd;
   padding: 30px;
 }
 
@@ -687,7 +693,7 @@ footer{
       'why-section'
       'what-section'
       'how-section'
-      'latest-blogs-section'
+      'demo-filtered-viewer'
       'FAQ-container'
       'contact-section'
       'more-links';
