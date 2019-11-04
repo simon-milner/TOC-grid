@@ -36,18 +36,38 @@ body{
   background-color: orange;
 }
 
+
 .topnav a {
   float: left;
   display: block;
   color: #363434;
   text-align: left;
-  padding: 4px 0 0 0; /*14px 16px;*/
+  padding: 4px 4px 0 4px;
   text-decoration: none;
   font-size: 14px;
+  height: 23px;
+}
+
+#myTopnav a img {
+  width: 128px;
+}
+
+#myTopnav a.active {
+  height: 50px;
+}
+
+#myTopnav #not-home-icon {
+  padding: 17px 15px 15px 25px;
+}
+
+
+#home-icon a.active {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 #not-home-icon {
-  padding: 12px 20px 0px 20px;
+  padding: 20px 20px 15px 20px;
 }
 
 .topnav a:hover {
@@ -72,26 +92,27 @@ body{
 .hero-text-block {
   position: absolute;
   top: 0px;
-  left: 20px;
-  padding-left: 20px;
+  left: 0px;
+  padding-left: 0;
+  border-left: 4px orange;
 }
 
 .tag-line-text-block {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
-  padding-left: 20px;
+  bottom: 50px;
+  right: 50px;
+  padding-left: 0;
 }
 
 #hero {grid-area: hero;}
 #eye-candy-section {grid-area: eye-candy-section;}
-#why-section {grid-area: why-section; padding: 20px;}
-#what-section {grid-area: what-section; padding: 20px;}
-#how-section {grid-area: how-section; padding: 20px;}
-#demo-filtered-viewer {grid-area: demo-filtered-viewer; padding: 20px;}
-.FAQ-container {grid-area: FAQ-container; padding: 20px;}
-#contact-section {grid-area: contact-section; padding: 0px;}
-#follow-section {grid-area: follow-section; padding: 20px;}
+#why-section {grid-area: why-section;}
+#what-section {grid-area: what-section;}
+#how-section {grid-area: how-section;}
+#demo-filtered-viewer {grid-area: demo-filtered-viewer;}
+.FAQ-container {grid-area: FAQ-container;}
+#contact-section {grid-area: contact-section;}
+#follow-section {grid-area: follow-section;}
 
 
 #landing-page-main-grid-container{
@@ -117,9 +138,9 @@ main > section:nth-child(even){
 
 h1 { font-family: Lato; font-size: 50px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 40px; padding: 20px; margin-top: 20px; color: orange;} 
 h2 { font-family: Lato; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 32px; padding: 20px 0px; color: orange} 
-h3 { font-family: Lato; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 22px; padding: 10px 10px 10px 20px; margin-bottom: 1rem;} 
-h4 { font-family: Lato; font-size: 28px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 20px; padding: 30px 10px 0px 5px;} 
-p { font-family: Lato; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; padding: 10px 10px 10px 20px; margin-bottom: 0px;} 
+h3 { font-family: Lato; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 22px; padding: 20px; margin-bottom: 1rem;} 
+h4 { font-family: Lato; font-size: 28px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 20px; padding: 20px;} 
+p { font-family: Lato; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; padding: 10px 20px; margin-bottom: 0px;} 
 .p-body { font-size: 16px; font-weight: 400; line-height: 34px; color: #667080; margin-top: 8px;}
 .p-header {font-size: 14px; font-weight: 500; line-height: 17px; color: #191B1D; margin-bottom: 0px;}
 .black {color: black;}
@@ -133,7 +154,7 @@ pre { font-family: Lato; font-size: 13px; font-style: normal; font-variant: norm
 input { font-family: Lato; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 15px; padding: 5px; margin-bottom: 5px; width: 100%;} 
 textarea { font-family: Lato; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 15px; padding: 5px; margin-bottom: 5px; } 
 footer > p { font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 25px; padding: 5px; margin: 20px 0;} 
-li {font-family: Lato; font-size: 15px;}
+li {font-family: Lato; font-size: 16px;}
 
 li span {
   position: relative;
