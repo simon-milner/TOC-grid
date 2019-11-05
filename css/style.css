@@ -138,9 +138,9 @@ main > section:nth-child(even){
 
 h1 { font-family: Lato; font-size: 50px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 40px; padding: 20px; margin-top: 20px; color: orange;} 
 h2 { font-family: Lato; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 32px; padding: 20px 0px; color: orange} 
-h3 { font-family: Lato; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 22px; padding: 20px; margin-bottom: 1rem;} 
+h3 { font-family: Lato; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 22px; padding: 20px 10px; margin-bottom: 1rem;} 
 h4 { font-family: Lato; font-size: 28px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 20px; padding: 20px;} 
-p { font-family: Lato; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; padding: 10px 20px; margin-bottom: 0px;} 
+p { font-family: Lato; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; padding: 20px 10px; margin-bottom: 0px;} 
 .p-body { font-size: 16px; font-weight: 400; line-height: 34px; color: #667080; margin-top: 8px;}
 .p-header {font-size: 14px; font-weight: 500; line-height: 17px; color: #191B1D; margin-bottom: 0px;}
 .black {color: black;}
@@ -154,11 +154,11 @@ pre { font-family: Lato; font-size: 13px; font-style: normal; font-variant: norm
 input { font-family: Lato; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 15px; padding: 5px; margin-bottom: 5px; width: 100%;} 
 textarea { font-family: Lato; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 15px; padding: 5px; margin-bottom: 5px; } 
 footer > p { font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 25px; padding: 5px; margin: 20px 0;} 
-li {font-family: Lato; font-size: 16px;}
+li {font-family: Lato; font-size: 14px; padding: 10px}
 
 li span {
   position: relative;
-  left: -8px;
+  left: -12px;
 }
 
 
@@ -622,7 +622,11 @@ card img {
 
 .grid-container > div{
   background: #0087cd;
-  padding: 30px;
+  padding: 0px;
+}
+
+.submit-form-container > div {
+  padding: 10px;
 }
 
 .grid-container > div:nth-child(even){
@@ -832,9 +836,35 @@ footer{
     grid-template-columns: 1fr;        
   }
 
+
+
+/*     MORE PAGE 
+------------------------- */
+
+
+#more-page-main-grid-container {
+  height: 100vh;
+  width: 100vw;
+  }
+
 }
 
 
+/*     MORE PAGE 
+------------------------- */
+
+
+#more-page-main-grid-container > div:nth-child(even){
+    background: #e9e7e7;
+  }
+
+.back-icon {
+  text-align: left;
+}
+
+.nav-title {
+  text-align: right;
+}
 
 
 
