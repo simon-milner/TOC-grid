@@ -809,6 +809,8 @@ footer{
 
   .more-links{
     display: grid;
+
+
     grid-template-areas:
       'more-links-container1 more-links-container2'
       'more-links-container3 more-links-container4'
