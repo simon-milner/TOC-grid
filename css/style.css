@@ -3,14 +3,20 @@
   padding: 0;
 }
 
-
+/*
 body{
   height: 100%;
   position: relative;
   padding: 0px;
   color:#363434;
   background:#fff;
+}*/
+
+
+#landing-page-navbar {
+  height: 58px; 
 }
+
 #landing-page-navbar {grid-area: landing-page-navbar;}
 #landing-page-main-grid-container {grid-area: landing-page-main-grid-container;}
 #landing-page-footer {grid-area: landing-page-footer;}
@@ -28,21 +34,18 @@ body{
 
 .topnav {
   overflow: hidden;
-  background-color:orange;
-}
-
-.topnav {
-  overflow: hidden;
   background-color: orange;
+  display: inline-block;
+  width: 100%;
 }
 
 
 .topnav a {
   float: left;
-  display: block;
   color: #363434;
+  display: block;
   text-align: left;
-  padding: 6px 4px 0 4px;
+  padding: 15 20px;
   text-decoration: none;
   font-size: 14px;
   height: 23px;
@@ -52,13 +55,11 @@ body{
   width: 128px;
 }
 
-#myTopnav a.active {
-  height: 50px;
-}
 
+/*
 #myTopnav #not-home-icon {
   padding: 17px 15px 16px 25px;
-}
+}*/
 
 
 #home-icon a.active {
@@ -404,7 +405,7 @@ img {
 }
 
 a img {
-  padding-left: 10px;
+  padding: 6px 20px 15px 15px;
 }
 
 
@@ -699,7 +700,7 @@ card img {
 
 footer{
   margin-top: 10px;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 0.5rem; /* Footer height */
@@ -798,13 +799,12 @@ footer{
       grid-template-columns: 1fr;
   }
 
-  .follow-us{
-    display: grid;
-    grid-template-areas:
-      'header'
-      'icons-container1' 
-      'icons-container2';
-    grid-template-columns: 1fr;
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 
   .more-links{
@@ -840,7 +840,7 @@ footer{
 ------------------------- */
 
 
-#more-page-main-grid-container {
+#more-page-container {
   height: 100vh;
   width: 100vw;
   }
@@ -865,6 +865,16 @@ li {font-family: Lato; font-size: 14px; padding: 10px 0px 10px 20px;}
 .nav-title {
   text-align: right;
   height: 56px;
+}
+
+#more-page-not-home-icon {
+  padding: 20px 20px 15px 20px;
+}
+
+#more-page-title {
+  padding: 20px 20px 15px 20px;
+  width: 80%;
+  text-align: center;
 }
 
 
