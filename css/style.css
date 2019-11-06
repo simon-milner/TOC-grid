@@ -12,10 +12,10 @@ body{
   background:#fff;
 }*/
 
-
+/*
 #landing-page-navbar {
   height: 58px; 
-}
+}*/
 
 #landing-page-navbar {grid-area: landing-page-navbar;}
 #landing-page-main-grid-container {grid-area: landing-page-main-grid-container;}
@@ -35,8 +35,6 @@ body{
 .topnav {
   overflow: hidden;
   background-color: orange;
-  display: inline-block;
-  width: 100%;
 }
 
 
@@ -45,20 +43,13 @@ body{
   color: #363434;
   display: block;
   text-align: left;
-  padding: 15 20px;
+  padding: 15px 20px;
   text-decoration: none;
   font-size: 14px;
   height: 23px;
-}
-
+}/*
 #myTopnav a img {
   width: 128px;
-}
-
-
-/*
-#myTopnav #not-home-icon {
-  padding: 17px 15px 16px 25px;
 }*/
 
 
@@ -67,9 +58,10 @@ body{
   padding-bottom: 20px;
 }
 
+/*
 #not-home-icon {
   padding: 20px 20px 15px 20px;
-}
+}*/
 
 .topnav a:hover {
   background-color: #ddd;
@@ -146,9 +138,9 @@ main > section:nth-child(even){
 
 h1 { font-family: Lato; font-size: 50px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 40px; padding: 20px; margin-top: 20px; color: orange;} 
 h2 { font-family: Lato; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 32px; padding: 20px 0px; color: orange} 
-h3 { font-family: Lato; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 22px; padding: 20px; margin-bottom: 1rem;} 
+h3 { font-family: Lato; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 22px; padding: 20px 20px 5px 20px; margin-bottom: 0rem;} 
 h4 { font-family: Lato; font-size: 28px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 20px; padding: 20px;} 
-p { font-family: Lato; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; padding: 20px; margin-bottom: 0px;} 
+p { font-family: Lato; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; padding: 10px 10px 10px 20px; margin-bottom: 0px;} 
 .p-body { font-size: 16px; font-weight: 400; line-height: 34px; color: #667080; margin-top: 8px;}
 .p-header {font-size: 14px; font-weight: 500; line-height: 17px; color: #191B1D; margin-bottom: 0px;}
 .black {color: black;}
@@ -707,10 +699,6 @@ footer{
 }
 
 @media screen and (max-width: 650px) {
-  body {
-    padding: 0;
-  }
-
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -728,6 +716,14 @@ footer{
     display: block;
     text-align: left;
   }
+
+  body {
+    padding: 0;
+  }
+
+  
+
+
 
   #landing-page-main-grid-container{
     display: grid;
