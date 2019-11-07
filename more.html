@@ -80,10 +80,22 @@ text-align: center;
 }
 
 #myTopnav {
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
 grid-auto-rows: auto; /* minmax(150px, auto);*/
 display: grid;
 margin: 0 auto;
+}
+
+.eleven {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.twelve {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
