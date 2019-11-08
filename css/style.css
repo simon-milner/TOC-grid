@@ -50,7 +50,7 @@ body{
 }
 
 .home-icon img {
-  padding: 5px 0 0 15px;
+  padding: 7px 0 0 15px;
 }
 
 #myTopnav a img {
@@ -69,7 +69,7 @@ body{
 
 
 #not-home-icon {
- padding: 12px 20px 13px 20px;
+ padding: 12px 20px 11px 20px;
 }
 
 .topnav a:hover {
@@ -710,6 +710,18 @@ footer{
   height: 0.5rem; /* Footer height */
 }
 
+#more-page-main-grid-container {
+  height: 100vh;
+  width: 100vw;
+  }
+
+.ellipsis {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+}
+
 @media screen and (max-width: 650px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -847,11 +859,6 @@ footer{
 /*     MORE PAGE 
 ------------------------- */
 
-
-#more-page-container {
-  height: 100vh;
-  width: 100vw;
-  }
 
 li {font-family: Lato; font-size: 14px; padding: 10px 0px 10px 20px;}  
 
