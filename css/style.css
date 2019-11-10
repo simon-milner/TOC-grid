@@ -712,7 +712,6 @@ footer{
 
 #more-page-main-grid-container {
   height: 100vh;
-  width: 100vw;
   }
 
 .ellipsis {
@@ -868,10 +867,6 @@ li {font-family: Lato; font-size: 14px; padding: 10px 0px 10px 20px;}
 /*     MORE PAGE 
 ------------------------- */
 
-
-#more-page-main-grid-container > div:nth-child(even){
-    background: #e9e7e7;
-  }
 
 .back-icon {
   text-align: left;
